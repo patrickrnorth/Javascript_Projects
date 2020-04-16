@@ -1,5 +1,5 @@
-function My_First_Function(){
-    var ryan = "This is Ryan typing.";
-    var result = str.fontcolor("red");
-    document.getElementById("Red_Text").innerHTML = result;
-}
+function My_Function(){
+    var sentence = "I am learning";
+    sentence += " a lot from this book!"
+    document.getElementById("Concatenate").innerHTML = sentence;
+  }
