@@ -21,7 +21,7 @@ function Input_Digit(digit) {
     } else {
         // this overwrites Display_Value if the current value is 0
         // otherwise it adds onto it
-        Calculator.Display_Value = Display_Value ==='0' ? digit : Display_Value = digit; // corrected!!!!
+        Calculator.Display_Value = Display_Value ==='0' ? digit : Display_Value + digit;
     }
 }
 // this section handles decimal points
@@ -49,7 +49,7 @@ function Handle_Operator(Next_Operator) {
         Calculator.operator = Next_Operator;
         return;
     }
-    if (First_Operand == null) {
+    if (First_Operand === null) {
         Calculator.First_Operand = Value_of_Input;
     } else if (operator) { // checks if an operator already exists
         const Value_Now = First_Operand || 0;
