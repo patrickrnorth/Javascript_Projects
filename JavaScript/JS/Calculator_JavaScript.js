@@ -58,7 +58,7 @@ function Handle_Operator(Next_Operator) {
         const result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
 
         Calculator.Display_Value = String(result);
-        Calculator.First_Operand = Next_Operator;
+        Calculator.First_Operand = result;
     }
 
     Calculator.Wait_Second_Operand = true;
